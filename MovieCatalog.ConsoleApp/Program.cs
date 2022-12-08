@@ -74,7 +74,7 @@ namespace MovieCatalog.ConsoleApp
                 {
                     WriteMessageAndBreakLine($"{title} is not yet implemented.", true);
                 }
-                static void WriteMessageAndBreakLine(string message, bool warn = false)
+                static void WriteMessageAndBreakLine ( string message, bool warn = false)
                 {
                     var (back, fore) = (Console.BackgroundColor, Console.ForegroundColor);
                     (Console.BackgroundColor, Console.ForegroundColor) = warn ? (ConsoleColor.Yellow, ConsoleColor.DarkBlue) : (back, ConsoleColor.Green);
